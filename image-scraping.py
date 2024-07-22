@@ -10,13 +10,12 @@ driver = webdriver.Chrome() # 크롬 브라우저 열기
 driver.maximize_window() # 창 최대화
 
 url = "https://www.arkaenergy.com/learn/modern-house-ideas"
-driver.get(url=url) # 구글 이미지 접속
+driver.get(url=url) # url 접속
 driver.implicitly_wait(time_to_wait=10) # 화면 로드 완료 시까지 최대 10초 휴식
 
 
 
 # 웹 페이지 끝까지 내리기
-# 웹 서버 과부하 방지하고자 주석처리
 SCROLL_PAUSE_TIME = 0.5
 
 # Get scroll height
